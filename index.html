@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.3rem;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .detail-item {
+            margin-bottom: 1rem;
+        }
+
+        .detail-label {
+            font-weight: bold;
+            color: var(--secondary-color);
+            display: block;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            list-style: none;
+        }
+
+        .skills-list li {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--secondary-color);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>[Your Full Name]</h1>
+        <p>Professional Software Developer | Problem Solver | Tech Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                A dedicated professional with a passion for building scalable and efficient solutions. 
+                I specialize in creating high-quality software and am constantly learning new technologies 
+                to stay at the forefront of the industry.
+            </p>
+        </section>
+
+        <section id="details">
+            <h2>Contact & Details</h2>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Email</span>
+                    <span>your.email@example.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span>Mumbai, India</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">LinkedIn</span>
+                    <span>linkedin.com/in/yourprofile</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">GitHub</span>
+                    <span>github.com/yourusername</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>HTML5 & CSS3</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>SQL</li>
+                <li>Git</li>
+                <li>Cloud Computing</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
